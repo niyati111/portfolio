@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+</head>
+<body>
+    <main>
+        <header>
+            <div class="overlay overlay-lg">
+                <img src="./img/shapes/square.png" class="shape square" alt="square not seen"/>
+                <img src="./img/shapes/circle.png" class="shape circle" alt="circle not seen"/>
+                <img src="./img/shapes/half-circle.png" class="shape half-circle1" alt="half-circle1 not seen"/>
+                <img src="./img/shapes/half-circle.png" class="shape half-circle2" alt="half-circle2 not seen"/>
+                <img src="./img/shapes/x.png" class="shape xshape" alt="xshape not seen"/>
+                <img src="./img/shapes/wave.png" class="shape wave wave1" alt="wave1 not seen"/>
+                <img src="./img/shapes/wave.png" class="shape wave wave2" alt="wave2 not seen"/>
+                <img src="./img/shapes/triangle.png" class="shape triangle" alt="triangle not seen"/>
+                <img src="./img/shapes/letters.png" class="letters" alt="shapes not seen"/>
+                <img src="./img/shapes/points1.png" class="points points1" alt="points1 not seen"/>
+            </div>
+            <nav>
+                <div class="container">
+                    <div class="logo">
+                        <img src="./img/logo.png" alt="logo not seen">
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#" class="active">Hire Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </nav>
+            <div class="header-content">
+                <div class="container grid-2">
+                    <div class="column-1">
+                        <h1 class="header">Niyati Patel</h1>
+                        <p class="text">Hello, I am Niyati Patel, web designer and developer. I am doctor by passion and software developer by profession.
+                        </p>
+                        <a href="#" class="btn">Download cv</a>
+                    </div>
+                    <div class="column-2 image">
+                        <img src="./img/shapes/points2.png" class="points points2" alt="points2not seen"/>
+                        <img src="./img/person.png" class="img-element z-index" alt="person image not found"/>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="services section">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="What I Do">Services</h3>
+                    <p class="text">I am learning all about software developing and working on my skills.
+                    </p>
+                </div>
+                <div class="cards">
+                    <div class="card-wrap">
+                        <img src="./img/shapes/points3.png" class="points points1 points-sq" alt=""/>
+                        <div class="card" data-card="UI/UX">
+                            <div class="card-content">
+                                <img src="./img/design-icon.png" class="icon" alt="design-icon image not seen">
+                                <h3 class="title-sm">Web Design</h3>
+                                <p class="text">CSS is very important language to learn how to do web designing.
+                                </p>
+                                <a href="#" class="btn small">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrap">
+                        <div class="card" data-card="Code">
+                            <div class="card-content">
+                                <img src="./img/code-icon.png" class="icon" alt="code-icon image not seen">
+                                <h3 class="title-sm">Web Development</h3>
+                                <p class="text">HTML and CSS are very important languages to learn how to do web designing.
+                                </p>
+                                <a href="#" class="btn small">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrap">
+                        <img src="./img/shapes/points3.png" class="points points2 points-sq" alt=""/>
+                        <div class="card" data-card="App">
+                            <div class="card-content">
+                                <img src="./img/app-icon.png" class="icon" alt="app-icon image not seen">
+                                <h3 class="title-sm">App Development</h3>
+                                <p class="text">HTML, CSS and JavaScript are very important languages to learn how to do web designing.
+                                </p>
+                                <a href="#" class="btn small">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section">
+            <div class="background-bg">
+                <div class="overlay overlay-sm">
+                    <img src="./img/shapes/half-circle.png" class="shape half-circle1" alt=""/>
+                    <img src="./img/shapes/half-circle.png" class="shape half-circle2" alt=""/>
+                    <img src="./img/shapes/square.png" class="shape square" alt=""/>
+                    <img src="./img/shapes/wave.png" class="shape wave" alt=""/>
+                    <img src="./img/shapes/circle.png" class="shape circle" alt=""/>
+                    <img src="./img/shapes/triangle.png" class="shape triangle" alt=""/>
+                    <img src="./img/shapes/x.png" class="shape xshape" alt=""/>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="My Works">Portfolio</h3>
+                </div>
+
+                <div class="section-body">
+                    <div class="filter">
+                        <button class="filter-btn active"data-filter="*">All</button>
+                        <button class="filter-btn" data-filter=".ui">UI/UX</button>
+                        <button class="filter-btn" data-filter=".webdev">Web Dev</button>
+                        <button class="filter-btn" data-filter=".appdev">Mobile App</button>
+                        <button class="filter-btn" data-filter=".logo">Logo Design</button>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-item logo">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port1.jpg" alt="port1 not seen"/>
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Logo Design</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item webdev">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port2.png" alt="port2 not seen"/>
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>App Development</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item ui webdev">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port3.png" alt="port3 not seen"/>
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Web Design</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item ui">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port4.png" alt="port4 not seen"/>
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>UI / UX Design</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item logo">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port5.jpg" alt="port5 not seen"/>
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>web Development</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item appdev">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port6.jpg" alt="port6 not seen"/>
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Web Design</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item logo">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port7.jpg" alt="port7 not seen"/>
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Logo Design</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item appdev ui">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port8.png" alt="port8 not seen"/>
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>App Development</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item ui webdev">
+                            <div class="gallery-image">
+                                <img src="./img/portfolio/port9.png" alt="port9 not seen"/>
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Logo Design</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-folio">
+                        <a href="#" class="btn">More Folio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="Who Am I">About Me</h3>
+                </div>
+
+                <div class="section-body grid-2">
+                    <div class="column-1">
+                        <h3 class="title-sm">Hello, I am</h3>
+                        <p class="text">
+                            Niyati Patel. I have been learning IT since 2 months now. I have completed 2 languages - HTML and CSS.
+                        </p>
+                        <div class="skills">
+                            <div class="skill html">
+                                <h3 class="skill-title">HTML</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90%" ></div>
+                                </div>
+                            </div>
+                            <div class="skill css">
+                                <h3 class="skill-title">CSS</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70%" ></div>
+                                </div>
+                            </div>
+                            <div class="skill js">
+                                <h3 class="skill-title">JS</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                    <div class="column-2 image">
+                        <img src="./img/shapes/points4.png" class="points" alt=""/>
+                        <img src="./img/about.png" class="z-index" alt="about image not seen"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="min-height: 2000px;"></section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
