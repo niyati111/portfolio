@@ -2,17 +2,36 @@ const filter_btns = document.querySelectorAll(".filter-btn");
 const skills_wrap = document.querySelector(".skills");
 const skills_bars = document.querySelectorAll(".skill-progress");
 const records_wrap = document.querySelector(".records");
-const records_number = document.querySelectorAll(".number");
+const records_numbers = document.querySelectorAll(".number");
 const footer_input = document.querySelector(".footer-input");
+const hamburger_menu = document.querySelector(".hamburger-menu");
+const navbar = document.querySelector("header nav");
+const links = document.querySelectorAll(".links a");
 
 footer_input.addEventListener("focus", () => {
     footer_input.classList.add("focus");
 });
 
 footer_input.addEventListener("blur", () => {
-    if(footer_input.value != "") return;
+    if (footer_input.value != "") return;
     footer_input.classList.remove("focus");
 });
+
+function closeMenu() {
+    navbar.classList.remove("open");
+    document.body.classList.remove("stop-scrolling");
+}
+
+hamburger_menu.addEventListener("click", () => {
+    if (!navbar.classList.contains("open")) {
+        navbar.classList.add("open");
+        document.body.classList.add("stop-scrolling");
+    } else {
+        closeMenu();
+    }
+});
+
+links.forEach((link) => link.addEventListener("click", () => closeMenu()));
 
 filter_btns.forEach((btn) =>
     btn.addEventListener("click", () => {
@@ -35,7 +54,6 @@ $(".grid").isotope({
 window.addEventListener("scroll", () => {
     countup();
     skillsEffect();
-    checkScroll(skills_wrap)
 })
 
 function skillsEffect() {
@@ -52,7 +70,7 @@ function checkScroll(el){
 
 function countup(){
     if (!checkScroll(records_wrap)) return;
-    records_number.forEach(numb => {
+    records_number.forEach((numb) => {
         const updateCount = () => {
             let currentNum = +numb.innerText;
             let maxNum = +numb.dataset.num;
@@ -62,8 +80,7 @@ function countup(){
             if(currentNum < maxNum){
                 numb.innerText = currentNum + increment;
                 setTimeout(updateCount, 1);
-            }
-            else{
+            } else {
                 numb.innerText = maxNum;
             }
         };
@@ -77,10 +94,10 @@ var mySwiper = new Swiper(".swiper-container", {
     slidesPerView: 1,
     loop: true,
     autoplay: {
-        delay: 5000
+        delay: 5000,
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
       },
 });
